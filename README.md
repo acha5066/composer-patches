@@ -84,7 +84,10 @@ If you want your project to accept patches from dependencies, you must have the 
       "cweagans/composer-patches": "^1.5.0"
   },
   "extra": {
-      "enable-patching": true
+      "apply-patches-from": [
+          "mxr576/trusted_lib1",
+          "anyvendor/awesomepackage"
+      ]
   }
 }
 ```
